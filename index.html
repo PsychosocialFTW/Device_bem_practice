@@ -5,7 +5,7 @@
 	<title>HTML Academy: Девайс</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main_min.css">
 </head>
 <body>
 	<div class="container">
@@ -44,81 +44,88 @@
 			</nav>
 		</header>
 	</div>
-	<main class="content">
+	<main>
 		<!--js-slider begin-->
-		<input type="radio" name="main-slider" id="main-slider-1" class="hidden-radio content__slider-1" checked>
-		<input type="radio" name="main-slider" id="main-slider-2" class="hidden-radio content__slider-2">
-		<input type="radio" name="main-slider" id="main-slider-3" class="hidden-radio content__slider-3">
-		<section class="slider content__container">
-			<h2 class="visually-hidden">Девайсы</h2>
-			<div class="slider-switch">
-				<label for="main-slider-1" class="slider-switch__item slider-switch__toggle-1"></label>
-				<label for="main-slider-2" class="slider-switch__item slider-switch__toggle-2"></label>
-				<label for="main-slider-3" class="slider-switch__item slider-switch__toggle-3"></label>
-			</div>
-			<section class="slide slider__item">
-				<div class="first-image slide__first-image">
-					<img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486" class="first-image__long-stick">
+		<div class="container">
+			<input type="radio" name="main-slider" id="main-slider-1" class="hidden-radio main-slider-1" checked>
+			<input type="radio" name="main-slider" id="main-slider-2" class="hidden-radio main-slider-2">
+			<input type="radio" name="main-slider" id="main-slider-3" class="hidden-radio main-slider-3">
+			<section class="slider">
+				<h2 class="visually-hidden">Девайсы</h2>
+				<div class="slider-switch">
+					<label for="main-slider-1" class="slider-switch-item slider-switch-1"></label>
+					<label for="main-slider-2" class="slider-switch-item slider-switch-2"></label>
+					<label for="main-slider-3" class="slider-switch-item slider-switch-3"></label>
 				</div>
-				<div class="slide-content first-slide-content">
-					<h2 class="slide-content__caption">Делай селфи,<br> как Бен Стиллер!</h2>
-					<p class="slide-content__paragraph">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-					<a href="#" class="slide-content__link">Подробнее</a>
-					<table class="slide-table slide-content__table">
-						<tr>
-							<td class="slide-table__properties">8,5 м</td>
-							<td class="slide-table__properties">5 кг</td>
-							<td class="slide-table__properties">Карбон</td>
-						</tr>
-						<tr>
-							<td class="slide-table__description">Длина палки</td>
-							<td class="slide-table__description">Вес палки</td>
-							<td class="slide-table__description">Материал</td>
-						</tr>
-					</table>
-				</div>
+				<section class="slider-item">
+					<div class="slide1-img">
+						<img src="img/slider-1.png" alt="Самая длинная палка для селфи" width="384" height="486" class="long-stick">
+					</div>
+					<div class="slide1-content slide1">
+						<div class="slider-item-description">
+							<h2>Делай селфи,<br> как Бен Стиллер!</h2>
+							<p>Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+							<a href="#">Подробнее</a>
+							<table class="product">
+								<tr>
+									<td class="product-properties stick-properties">8,5 м</td>
+									<td class="product-properties stick-properties">5 кг</td>
+									<td class="product-properties stick-properties">Карбон</td>
+								</tr>
+								<tr>
+									<td class="product-description">Длина палки</td>
+									<td class="product-description">Вес палки</td>
+									<td class="product-description">Материал</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section class="slider-item">
+					<div class="slide2-img">
+						<img src="img/slider-2.png" alt="Мотивирущие фитнес-браслеты" width="345" height="485" class="fitness-bracelet">
+					</div>
+					<div class="slide2-content slide2">
+						<div class="slider-item-description">
+							<h2>Худеем <br> правильно!</h2>
+							<p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
+							<a href="#">Подробнее</a>
+							<table class="product">
+								<tr>
+									<td class="product-properties bracelet-properties">48 часов</td>
+								</tr>
+								<tr>
+									<td class="product-description bracelet-properties">Без подзарядки</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section class="slider-item">
+					<div class="slide3-img">
+						<img src="img/slider-3.png" alt="Квадрокоптер с мощным лазером" width="526" height="334" class="quadrupter">
+					</div>
+					<div class="slide3-content slide3">
+						<div class="slider-item-description">
+							<h2>Порхает как бабочка, жалит как пчела!</h2>
+							<p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.</p>
+							<a href="#">Подробнее</a>
+							<table class="product">
+								<tr>
+									<td class="product-properties quadrupter-properties">800 м</td>
+									<td class="product-properties quadrupter-properties">50 м</td>
+								</tr>
+								<tr>
+									<td class="product-description">Дальность полета</td>
+									<td class="product-description">Радиус поражения</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</section>
 			</section>
-			<section class="slide slider__item">
-				<div class="second-image slide__second-image">
-					<img src="img/slider-2.png" alt="Мотивирущие фитнес-браслеты" width="345" height="485" class="second-image__fitness-bracelet">
-				</div>
-				<div class="slide-content second-slide-content">
-					<h2 class="slide-content__caption">Худеем <br> правильно!</h2>
-					<p class="slide-content__paragraph">Мотивирующие фитнес-браслеты помогут найти в себе силы<br> не пропускать занятия и соблюдать диету.</p>
-					<a href="#" class="slide-content__link">Подробнее</a>
-					<table class="slide-table slide-content__table">
-						<tr>
-							<td class="slide-table__properties">48 часов</td>
-						</tr>
-						<tr>
-							<td class="slide-table__description">Без подзарядки</td>
-						</tr>
-					</table>
-				</div>
-			</section>
-			<section class="slide slider__item">
-				<div class="third-image slide__third-image">
-					<img src="img/slider-3.png" alt="Квадрокоптер с мощным лазером" width="526" height="334" class="third-image__quadrupter">
-				</div>
-				<div class="slide-content third-slide-content">
-					<h2 class="slide-content__caption">Порхает как бабочка, жалит как пчела!</h2>
-					<p class="slide-content__paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен <br> мощным лазером, замаскированным под стандартную камеру.</p>
-					<a href="#" class="slide-content__link">Подробнее</a>
-					<table class="slide-table slide-content__table third-slide-content__table">
-						<tr>
-							<td class="slide-table__properties slide-table__quadrupter">800 м</td>
-							<td class="slide-table__properties slide-table__quadrupter">50 м</td>
-						</tr>
-						<tr>
-							<td class="slide-table__description">Дальность полета</td>
-							<td class="slide-table__description">Радиус поражения</td>
-						</tr>
-					</table>
-				</div>
-			</section>
-		</section>
+		</div>
 		<!--js-slider end-->
-
 		<section class="popular">
 			<div class="container">
 				<h2 class="visually-hidden">Популярные товары</h2>
